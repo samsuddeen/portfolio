@@ -1,0 +1,14 @@
+
+
+# Block specific directories from being crawled (if applicable)
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /user/
+
+# Allow search engines to crawl everything else
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shamsudinaalam.com.np/sitemap.xml
