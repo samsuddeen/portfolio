@@ -1050,12 +1050,12 @@
 
 
 <script>
-    // Validate form submission with reCAPTCHA
+    
     document.getElementById("contact-form").addEventListener("submit", function(event) {
-        // Get the reCAPTCHA response
+       
         var recaptchaResponse = grecaptcha.getResponse();
 
-        // Check if reCAPTCHA is completed
+        
         if (recaptchaResponse.length === 0) {
             event.preventDefault();
             alert("Please complete the reCAPTCHA to submit the form.");
@@ -1064,10 +1064,10 @@
     });
 
     document.getElementById("jobForm").addEventListener("submit", function(event) {
-        // Get the reCAPTCHA response
+       
         var recaptchaResponse = grecaptcha.getResponse();
 
-        // Check if reCAPTCHA is completed
+       
         if (recaptchaResponse.length === 0) {
             event.preventDefault();
             alert("Please complete the reCAPTCHA to submit the form.");
@@ -1079,7 +1079,7 @@
 
 <script>
     $(document).ready(function() {
-        // Sidebar Toggle Functionality
+       
         $('.bix-tools-sidebar-toggle').on('click', function() {
             $('.bix-tools-sidebar').toggleClass('active');
             $('.bix-tools-sidebar-overlay').toggleClass('active');
