@@ -38,7 +38,6 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 	
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C2EHJBB6WG"></script>
    <script>
     window.dataLayer = window.dataLayer || [];
@@ -923,22 +922,22 @@
 				                      <input type="hidden" name="access_key" value="4b8dd7a9-f9b2-48a2-a989-5fe238cc002e">
 
                                         <div class="form-group">
-                                            <input type="text" name="Name" placeholder="Name">
+                                            <input type="text" name="Name" placeholder="Name" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="Email" placeholder="Email">
+                                            <input type="email" name="Email" placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-select" name="method" aria-label="Select Method">
+                                            <select class="form-select" name="method" aria-label="Select Method" required>
                                                 <option selected="Fixed Rate">Fixed Rate</option>
                                                 <option value="Hourly Rate">Hourly Rate</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <input name="Amount" placeholder="Offer ex $1900" type="text">
+                                            <input name="Amount" placeholder="Offer ex $1900" type="text" required>
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="Offer Letter" placeholder="Offer Letter"></textarea>
+                                            <textarea name="Offer Letter" placeholder="Offer Letter" required></textarea>
                                         </div>
                                         <div class="g-recaptcha mt-2 mb-3"  data-sitekey="6Leu7IsqAAAAALnDINYovn24h6IeCmaidvcakMnj"></div>
                                         <div class="bix-review-buttons">
@@ -950,26 +949,26 @@
                             </div>
                             <div class="tab-pane fade" id="job" role="tabpanel" aria-labelledby="job-tab">
                                 <div class="col-12">
-                                    <form action="https://api.web3forms.com/submit" method="POST">
+                                    <form action="https://api.web3forms.com/submit" method="POST" id="jobForm">
 				                      <input type="hidden" name="access_key" value="4b8dd7a9-f9b2-48a2-a989-5fe238cc002e">
 
                                         <div class="form-group">
-                                            <input type="text" name="Name" placeholder="Name">
+                                            <input type="text" name="Name" placeholder="Name" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="Email" placeholder="Email">
+                                            <input type="email" name="Email" placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-select" name="method" aria-label="Select Method">
+                                            <select class="form-select" name="method" aria-label="Select Method" required>
                                                 <option selected="">Virtual Job</option>
                                                 <option value="1">Office Job</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <input name="Salary" placeholder="Offer Salary ex $1500/Mo" type="text">
+                                            <input name="Salary" placeholder="Offer Salary ex $1500/Mo" type="text" required>
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="Offer Letter" placeholder="Offer Letter"></textarea>
+                                            <textarea name="Offer Letter" placeholder="Offer Letter" required></textarea>
                                         </div>
                                         <div class="g-recaptcha mt-2 mb-3"  data-sitekey="6Leu7IsqAAAAALnDINYovn24h6IeCmaidvcakMnj"></div>
                                         <div class="bix-review-buttons">
@@ -1044,8 +1043,40 @@
 <script src="assets/js/vendor/parallax.min.js"></script>
 <script src="assets/js/vendor/aos.js"></script>
 <script src="assets/js/vendor/smoothscroll.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 <!-- Custom JavaScript -->
+
+
+<script>
+    // Validate form submission with reCAPTCHA
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        // Get the reCAPTCHA response
+        var recaptchaResponse = grecaptcha.getResponse();
+
+        // Check if reCAPTCHA is completed
+        if (recaptchaResponse.length === 0) {
+            event.preventDefault();
+            alert("Please complete the reCAPTCHA to submit the form.");
+            return false;
+        }
+    });
+
+    document.getElementById("jobForm").addEventListener("submit", function(event) {
+        // Get the reCAPTCHA response
+        var recaptchaResponse = grecaptcha.getResponse();
+
+        // Check if reCAPTCHA is completed
+        if (recaptchaResponse.length === 0) {
+            event.preventDefault();
+            alert("Please complete the reCAPTCHA to submit the form.");
+            return false;
+        }
+    });
+</script>
+
+
 <script>
     $(document).ready(function() {
         // Sidebar Toggle Functionality
