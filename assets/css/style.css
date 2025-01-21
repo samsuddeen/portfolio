@@ -4585,4 +4585,90 @@ ul.nav-tabs li button.active {
     padding: 15px 0 0 0;
   }
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background: #4FCE5D;
+  color: #fff;
+  border-radius: 50%; /* Circular shape */
+  height: 69px; /* Increased button height */
+  width: 68px; /* Increased button width */
+  line-height: 67px; /* Center the icon vertically */
+  text-align: center; /* Center the icon horizontally */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  font-size: 44px; /* Increased icon size */
+  z-index: 1000; /* Ensure it’s above other eements */
+  animation: wave 1.5s infinite; /* Wave animation */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+/* Wave Animation */
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px); /* Adjust wave height */
+  }
+}
+/* Additional Circle Border */
+.whatsapp-button:before {
+  content: '';
+  position: absolute;
+  color: #fff;
+  top: -5px; /* Adjust for border visibility */
+  left: -5px; /* Adjust for border visibility */
+  right: -5px; /* Adjust for border visibility */
+  bottom: -5px; /* Adjust for border visibility */
+  border: 3px solid #4FCE5D; /* Increased green border size */
+  border-radius: 50%; /* Circular border */
+  animation: pulse 1.5s infinite; /* Pulse animation */
+}
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: scale(1.1); /* Slightly increase the size */
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0.8;
+  }
+}
+/* Shake Effect on Hover */
+.whatsapp-button:hover {
+  animation: shake 0.5s; /* Shake animation on hover */
+  /* transform: scale(1.1); */
+  color: #fff; /* Slightly grow on hover */
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+/* Icon Styles */
+.fab, .fa-brands {
+  font-family: 'Font Awesome 6 Brands'; /* Ensure correct font family */
+  font-weight: 400;
+}
+/* WhatsApp Icon */
+.whatsapp-button i {
+  color: #fff; /* Icon color */
+}
+/* Responsive Styles */
+@media (max-width: 768px) { /* Adjust the max-width as needed for your responsive breakpoint */
+  .whatsapp-button {
+      height: 50px; /* Adjust height for mobile */
+      width: 50px; /* Adjust width for mobile */
+      line-height: 50px; /* Center icon vertically for mobile */
+      font-size: 35px; /* Adjust icon size for mobile */
+  }
+}
 /*# sourceMappingURL=style.css.map */
