@@ -5,28 +5,28 @@
   "name": "Shamsudin Aalam",
   "url": "https://www.shamsudinaalam.com.np",
   "image": "https://www.shamsudinaalam.com.np/assets/img/hero/transparent_pic.png",
-  "jobTitle": "Web Developer & Designer",
+  "jobTitle": "CEO & Web Developer",
   "email": "mailto:samsuddeenaalam7@gmail.com",
   "telephone": "+9779816266897",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Nagwa-16",
     "addressLocality": "Birgunj",
-    "addressCountry": "Nepal"
+    "addressCountry": "NP"
   },
   "description": "Shamsudin Aalam is an experienced web developer and designer specializing in creating modern, responsive, and user-friendly websites and applications.",
   "worksFor": {
     "@type": "Organization",
-    "name": "Aalam Technology",
-    "url": "https://www.aalamtechnology.com"  // Add the URL for your company website here
+    "name": "AtmosSoftTech Pvt Ltd",
+    "url": "https://atmossofttech.com/"
   },
-  "contactPoint": {
+  "contactPoint": [{
     "@type": "ContactPoint",
     "contactType": "Customer Support",
     "telephone": "+9779816266897",
     "areaServed": "NP",
-    "availableLanguage": "English"
-  },
+    "availableLanguage": ["English", "Nepali"]
+  }],
   "sameAs": [
     "https://www.linkedin.com/in/shamsudinaalam",
     "https://twitter.com/shamsudinaalam",
