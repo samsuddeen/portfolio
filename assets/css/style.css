@@ -256,8 +256,11 @@ h4, h5, h6 {
   top: 0;
   border: 1px dashed #111a24;
   border-radius: 50%;
-  -webkit-animation: loader 7s linear infinite;
-          animation: loader 7s linear infinite;
+  /* -webkit-animation: loader 7s linear infinite;
+  animation: loader 7s linear infinite; */
+
+  -webkit-animation: loader 2s linear infinite;
+   animation: loader 2s linear infinite;
 }
 @-webkit-keyframes loader {
   0% {

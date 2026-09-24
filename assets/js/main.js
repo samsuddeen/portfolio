@@ -3,9 +3,9 @@
     "use strict";
 
     /* Loader */
-    $(window).on("load", function () {
-        $(".bix-loader").fadeOut("slow");
-    });
+   $(function () {
+    $(".bix-loader").fadeOut(600);
+ });
 
     /* Aos animation on scroll */
     AOS.init({
