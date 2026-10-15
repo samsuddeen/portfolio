@@ -1,0 +1,25 @@
+# Shamsudin Aalam
+
+> Shamsudin Aalam (also spelled Samsudin Alam) is a Software Developer specializing in Laravel & PHP, based in Kathmandu, Nepal. He builds production-grade REST APIs, enterprise web applications, and third-party integrations, and is currently learning Python and Django.
+
+## About
+
+- Role: Software Developer (Laravel & PHP)
+- Experience: 3+ years
+- Location: Kathmandu, Nepal
+- Focus: Laravel web applications, REST API development, third-party API and payment gateway integration, deployment and DevOps, database design and optimization
+- Skills: PHP, Laravel, REST API, MySQL, PostgreSQL, Docker, GitLab CI/CD, Vue.js, Bootstrap, jQuery, AJAX, Ubuntu Linux, Nginx, Apache, DigitalOcean, Python and Django (currently learning)
+
+## Pages
+
+- [Home](https://shamsudinaalam.com.np/): Portfolio home - software developer in Kathmandu, Nepal.
+- [About](https://shamsudinaalam.com.np/about.html): Background, skills, and experience.
+- [Projects](https://shamsudinaalam.com.np/projects.html): Selected Laravel and PHP projects.
+- [Services](https://shamsudinaalam.com.np/services.html): Web application development and API integration services.
+- [Resume](https://shamsudinaalam.com.np/resume.html): Experience, education, skills, and certifications.
+
+## Contact
+
+- Email: shamsudinaalam@gmail.com
+- Phone: +977-9816266897
+- Website: https://shamsudinaalam.com.np

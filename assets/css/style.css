@@ -1231,6 +1231,26 @@ footer {
   background-color: #f7f5fb;
   padding: 10px 0;
 }
+.footer-contact-info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+  line-height: 30px;
+}
+.footer-contact-info span {
+  padding: 0 12px;
+}
+.footer-contact-info a {
+  padding: 0 12px;
+  color: #777;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-contact-info a:hover {
+  color: #f41a4a;
+}
 .footer-links {
   margin-top: 10px;
 }

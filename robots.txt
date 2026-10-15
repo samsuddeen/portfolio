@@ -1,14 +1,35 @@
+# robots.txt for https://shamsudinaalam.com.np
+# Allow all crawlers, including AI crawlers.
 
-
-# Block specific directories from being crawled (if applicable)
-User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /user/
-
-# Allow search engines to crawl everything else
 User-agent: *
 Allow: /
 
-# Sitemap location
+# AI crawlers (explicitly allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://shamsudinaalam.com.np/sitemap.xml
