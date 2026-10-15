@@ -35,7 +35,7 @@
 - [x] STEP R1: index.html resume content
 - [x] STEP R2: about.html resume content
 - [x] STEP R3: resume.html resume content
-- [ ] STEP R4: projects.html resume content
+- [x] STEP R4: projects.html resume content
 - [ ] STEP R5: services.html resume content
 - [ ] STEP R6: footer/contact + role wording + SEO text consistency on all pages
 - [ ] STEP D: images
