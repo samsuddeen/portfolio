@@ -1,0 +1,62 @@
+# Shamsudin Aalam - Full Profile
+
+> Shamsudin Aalam (also spelled Samsudin Alam) is a Software Developer specializing in Laravel & PHP with 3+ years of experience building production-grade APIs, enterprise web applications, and third-party integrations (Amadeus, DHL, FedEx, payment gateways). Based in Kathmandu, Nepal.
+
+## Summary
+
+Software Developer specializing in Laravel & PHP with 3+ years of experience building production-grade APIs, enterprise web applications, and third-party integrations (Amadeus, DHL, FedEx, payment gateways). Currently developing a banking audit system, with hands-on experience in Docker containerization and GitLab CI/CD pipelines for automated deployment. Specialized in MySQL and PostgreSQL optimization, RESTful API development, and server deployment on DigitalOcean/Ubuntu. Frontend collaboration experience with Vue.js and Bootstrap. Currently learning Python and Django to broaden backend skills.
+
+## Experience
+
+- Laravel (PHP) Developer, Trilokya Technology Pvt Ltd, Kathmandu, Nepal (June 2026 - Present)
+  - Developing and maintaining an Audit System for a bank, a Laravel-based enterprise application for managing audit workflows and compliance records.
+  - Containerized the application using Docker to ensure consistent environments across development, staging, and production.
+  - Set up and maintained CI/CD pipelines on GitLab for automated build, testing, and deployment.
+- Laravel (PHP) Developer, Nectar Digit Pvt Ltd, Kathmandu, Nepal (June 2024 - June 2026)
+  - Developed and maintained 10+ Laravel web applications serving thousands of users with optimized backend performance and scalable architecture.
+  - Designed and implemented RESTful APIs consumed by Vue.js frontends, including debugging and performance optimization.
+  - Deployed and managed Laravel applications on DigitalOcean, Hostinger, and CyberPanel.
+  - Performed database optimization using indexing, caching, and eager loading.
+- Laravel Developer (Remote), Des Vu Technologies, Pokhara, Nepal (November 2023 - May 2024)
+  - Contributed to backend development of a travel platform using Laravel and MySQL.
+  - Worked under senior developers to implement API integrations and booking workflows.
+- Laravel Developer (Part-time), Prosoft Nepal, Kathmandu, Nepal (June 2023 - September 2023)
+  - Contributed to multiple client projects focusing on backend development and database design.
+  - Implemented admin dashboards, RESTful APIs, and role-based user management features.
+
+## Education
+
+- B.Sc. (Hons) in Information Technology, 2026 - Present, LBEF Campus (Affiliated with Asia Pacific University of Technology & Innovation), Kathmandu, Nepal
+- Diploma in Computer Science and Engineering, GPA 3.5/4.0, 2019 - 2023, Birgunj Institute of Technology, Birgunj, Nepal
+
+## Skills
+
+- Backend: PHP, Laravel, RESTful APIs, SOAP API integration, Python and Django (currently learning)
+- Database: MySQL, PostgreSQL
+- Deployment & DevOps: Docker, GitLab CI/CD, Ubuntu Linux, DigitalOcean, Nginx, Apache, cPanel, CloudPanel, SSH
+- API & Integrations: Amadeus, DHL, FedEx, Plazmatech SOAP, eSewa, Khalti, ConnectIPS, HBL, Fonepay, Stripe, PayPal
+- Frontend Collaboration: Vue.js, Bootstrap, jQuery, AJAX
+- Developer Tools: Git, GitHub, GitLab, Postman, Composer, VS Code, TablePlus, FileZilla, XAMPP
+- Other: SEO Optimization, Google Search Console, FFmpeg, Zoho Mail, Slack
+
+## Projects
+
+- Shangrila Bank Audit System (2026) - Laravel, MySQL, Docker, GitLab CI/CD: Enterprise audit management system to digitize and streamline internal audit workflows and compliance reporting (private, no public link).
+- Order E-commerce Platform (2024) - Laravel, MySQL, Bootstrap, Vue.js: Full-featured e-commerce platform with a Vue.js frontend and efficient order management, secure payment gateways, and optimized inventory workflows.
+- Sewa Travel Booking Platform (2025) - Laravel, MySQL, Bootstrap, Vue.js: Travel booking platform with secure workflows for domestic and international flights, integrating Amadeus and Plazmatech SOAP APIs.
+- Elite Express Cargo Platform (2025) - Laravel, MySQL, Bootstrap: Cargo and courier management platform, integrating DHL, FedEx, and other courier APIs for live shipment status updates.
+- Kantipur Theatre Ticketing Platform (2024) - Laravel, MySQL, Bootstrap: Online theatre ticket booking platform with show management, integrating eSewa and Khalti payment gateways with automated booking confirmations.
+- Lekhabidhi HR Management System (2024) - Laravel, MySQL, Bootstrap, Vue.js: Scalable HR management system handling attendance, payroll, employee records, and organizational workflows with role-based access control.
+
+## Certifications
+
+- Laravel Advanced: Building Real-World Applications - Udemy
+- Built a Food Ordering E-commerce Platform using Laravel - Udemy (Instructor: Web Coding)
+- Vue.js Complete Guide for Beginners to Advanced - Udemy (Instructor: Maximilian)
+
+## Contact
+
+- Email: shamsudinaalam@gmail.com
+- Phone: +977-9816266897
+- Website: https://shamsudinaalam.com.np
+- Location: Kathmandu, Nepal
