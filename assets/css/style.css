@@ -201,8 +201,10 @@ ul {
   padding-left: 0;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1,
+.bix-h1, h2, .bix-h2, h3, .bix-h3,
+h4,
+.bix-h4, h5, .bix-h5, h6 , .bix-h6 {
   margin-bottom: 0;
   color: #111a24;
   letter-spacing: 0.03rem;
@@ -314,12 +316,12 @@ h4, h5, h6 {
           justify-content: center;
   text-align: center;
 }
-.bix-banner h4 {
+.bix-banner h4 ,.bix-banner .bix-h4 {
   font-size: 36px;
   font-weight: 700;
   color: #111a24;
 }
-.bix-banner h4 span {
+.bix-banner h4 span ,.bix-banner .bix-h4 span {
   color: #f41a4a;
 }
 
@@ -469,32 +471,32 @@ a.back-to-top svg path {
   z-index: 12;
   position: relative;
 }
-.section-breadcrumb .breadcrumb-contact h4 {
+.section-breadcrumb .breadcrumb-contact h4 ,.section-breadcrumb .breadcrumb-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 32px;
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
 }
-.section-breadcrumb .breadcrumb-contact h5 {
+.section-breadcrumb .breadcrumb-contact h5 ,.section-breadcrumb .breadcrumb-contact .bix-h5 {
   cursor: default;
 }
-.section-breadcrumb .breadcrumb-contact h5 span {
+.section-breadcrumb .breadcrumb-contact h5 span ,.section-breadcrumb .breadcrumb-contact .bix-h5 span {
   padding: 0 2px;
 }
-.section-breadcrumb .breadcrumb-contact h5 span i {
+.section-breadcrumb .breadcrumb-contact h5 span i ,.section-breadcrumb .breadcrumb-contact .bix-h5 span i {
   font-size: 14px;
   color: #fff;
 }
-.section-breadcrumb .breadcrumb-contact h5 span a {
+.section-breadcrumb .breadcrumb-contact h5 span a ,.section-breadcrumb .breadcrumb-contact .bix-h5 span a {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
 }
-.section-breadcrumb .breadcrumb-contact h5 .disable {
+.section-breadcrumb .breadcrumb-contact h5 .disable ,.section-breadcrumb .breadcrumb-contact .bix-h5 .disable {
   opacity: 0.7;
 }
-.section-breadcrumb .breadcrumb-contact h5 .disable a {
+.section-breadcrumb .breadcrumb-contact h5 .disable a ,.section-breadcrumb .breadcrumb-contact .bix-h5 .disable a {
   cursor: default;
 }
 
@@ -587,16 +589,16 @@ a.back-to-top svg path {
   .bix-banner {
     margin-bottom: 25px;
   }
-  .bix-banner h4 {
+  .bix-banner h4 ,  .bix-banner .bix-h4 {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 991px) {
-  .section-breadcrumb .breadcrumb-contact h4 {
+  .section-breadcrumb .breadcrumb-contact h4 ,  .section-breadcrumb .breadcrumb-contact .bix-h4 {
     margin-bottom: 4px;
     font-size: 28px;
   }
-  .section-breadcrumb .breadcrumb-contact h5 span a {
+  .section-breadcrumb .breadcrumb-contact h5 span a ,  .section-breadcrumb .breadcrumb-contact .bix-h5 span a {
     font-size: 15px;
   }
   .padding-tb-100 {
@@ -641,7 +643,7 @@ a.back-to-top svg path {
   .bix-banner {
     margin-bottom: 20px;
   }
-  .bix-banner h4 {
+  .bix-banner h4 ,  .bix-banner .bix-h4 {
     font-size: 28px;
   }
   .padding-tb-100 {
@@ -683,14 +685,14 @@ a.back-to-top svg path {
   }
 }
 @media screen and (max-width: 575px) {
-  .section-breadcrumb .breadcrumb-contact h4 {
+  .section-breadcrumb .breadcrumb-contact h4 ,  .section-breadcrumb .breadcrumb-contact .bix-h4 {
     margin-bottom: 0;
     font-size: 22px;
   }
-  .section-breadcrumb .breadcrumb-contact h5 span a {
+  .section-breadcrumb .breadcrumb-contact h5 span a ,  .section-breadcrumb .breadcrumb-contact .bix-h5 span a {
     font-size: 14px;
   }
-  .bix-banner h4 {
+  .bix-banner h4 ,  .bix-banner .bix-h4 {
     font-size: 24px;
   }
 }
@@ -1161,7 +1163,7 @@ header .bix-navbar .navbar-brand {
   color: #1b1c20;
   font-weight: 600;
 }
-.bix-mobile-menu .bix-menu-title .menu-title h4 {
+.bix-mobile-menu .bix-menu-title .menu-title h4 ,.bix-mobile-menu .bix-menu-title .menu-title .bix-h4 {
   position: relative;
   border: 0;
   font-size: 17px;
@@ -1347,7 +1349,7 @@ footer {
           align-items: center;
   border-bottom: 1px solid #eae8ef;
 }
-.bix-tools-sidebar .bix-bar-title h6 {
+.bix-tools-sidebar .bix-bar-title h6 ,.bix-tools-sidebar .bix-bar-title .bix-h6 {
   margin: 0;
   font-size: 17px;
   font-weight: 700;
@@ -1373,7 +1375,7 @@ footer {
   background-color: #f41a4a;
   border-radius: 5px;
 }
-.bix-tools-sidebar .bix-tools-detail .bix-tools-block h3 {
+.bix-tools-sidebar .bix-tools-detail .bix-tools-block h3 ,.bix-tools-sidebar .bix-tools-detail .bix-tools-block .bix-h3 {
   margin: 15px 0;
   font-size: 14px;
   font-weight: 500;
@@ -1654,20 +1656,20 @@ footer {
   right: 0;
   z-index: -1;
 }
-.bix-hero-contact h4 {
+.bix-hero-contact h4 ,.bix-hero-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 35px;
   font-weight: bold;
   color: #f41a4a;
 }
-.bix-hero-contact h1 {
+.bix-hero-contact h1 ,.bix-hero-contact .bix-h1 {
   margin-bottom: 16px;
   font-size: 78px;
   color: #111a24;
   font-weight: bold;
   position: relative;
 }
-.bix-hero-contact h1:after {
+.bix-hero-contact h1:after ,.bix-hero-contact .bix-h1:after {
   content: "";
   height: 70px;
   width: 70px;
@@ -1736,13 +1738,13 @@ footer {
     height: 400px;
     width: 400px;
   }
-  .bix-hero-contact h1 {
+  .bix-hero-contact h1 ,  .bix-hero-contact .bix-h1 {
     font-size: 70px;
   }
-  .bix-hero-contact h1:after {
+  .bix-hero-contact h1:after ,  .bix-hero-contact .bix-h1:after {
     right: 0;
   }
-  .bix-hero-contact h4 {
+  .bix-hero-contact h4 ,  .bix-hero-contact .bix-h4 {
     font-size: 32px;
   }
   .bix-hero-contact p {
@@ -1776,13 +1778,13 @@ footer {
   .bix-hero-contact .bix-buttons:after {
     right: 100px;
   }
-  .bix-hero-contact h4 {
+  .bix-hero-contact h4 ,  .bix-hero-contact .bix-h4 {
     font-size: 28px;
   }
-  .bix-hero-contact h1 {
+  .bix-hero-contact h1 ,  .bix-hero-contact .bix-h1 {
     font-size: 52px;
   }
-  .bix-hero-contact h1:after {
+  .bix-hero-contact h1:after ,  .bix-hero-contact .bix-h1:after {
     height: 50px;
     width: 50px;
     right: 50px;
@@ -1841,7 +1843,7 @@ footer {
   .bix-hero-img .hero-inner-img img {
     width: calc(100% - 400px);
   }
-  .bix-hero-contact h1:after {
+  .bix-hero-contact h1:after ,  .bix-hero-contact .bix-h1:after {
     right: 300px;
   }
   .bix-hero-contact .bix-buttons {
@@ -1849,16 +1851,16 @@ footer {
   }
 }
 @media screen and (max-width: 767px) {
-  .bix-hero-contact h4 {
+  .bix-hero-contact h4 ,  .bix-hero-contact .bix-h4 {
     font-size: 24px;
   }
-  .bix-hero-contact h1 {
+  .bix-hero-contact h1 ,  .bix-hero-contact .bix-h1 {
     font-size: 38px;
   }
   .bix-hero-contact p {
     font-size: 18px;
   }
-  .bix-hero-contact h1:after {
+  .bix-hero-contact h1:after ,  .bix-hero-contact .bix-h1:after {
     right: 200px;
   }
   .bix-hero-img .hero-inner-img img {
@@ -1897,7 +1899,7 @@ footer {
   .bix-hero-contact {
     text-align: center;
   }
-  .bix-hero-contact h1:after {
+  .bix-hero-contact h1:after ,  .bix-hero-contact .bix-h1:after {
     display: none;
   }
   .bix-hero-contact .bix-buttons {
@@ -2093,14 +2095,14 @@ ul.nav-tabs li button.active {
   padding: 3px 10px;
   font-size: 14px;
 }
-.bix-achievement .bix-achievement-inner .bix-achievement-box h4 {
+.bix-achievement .bix-achievement-inner .bix-achievement-box h4 ,.bix-achievement .bix-achievement-inner .bix-achievement-box .bix-h4 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   color: #111a24;
 }
-.bix-achievement .bix-achievement-inner .bix-achievement-box h4 span {
+.bix-achievement .bix-achievement-inner .bix-achievement-box h4 span ,.bix-achievement .bix-achievement-inner .bix-achievement-box .bix-h4 span {
   font-size: 15px;
   color: #555;
 }
@@ -2239,7 +2241,7 @@ ul.nav-tabs li button.active {
   }
 }
 @media screen and (max-width: 575px) {
-  .bix-achievement .bix-achievement-inner .bix-achievement-box h4 {
+  .bix-achievement .bix-achievement-inner .bix-achievement-box h4 ,  .bix-achievement .bix-achievement-inner .bix-achievement-box .bix-h4 {
     font-size: 16px;
     line-height: 25px;
   }
@@ -2373,7 +2375,7 @@ ul.nav-tabs li button.active {
 .bix-services .services-contact {
   padding: 30px;
 }
-.bix-services .services-contact h5 {
+.bix-services .services-contact h5 ,.bix-services .services-contact .bix-h5 {
   margin-bottom: 14px;
   font-size: 18px;
   color: #111a24;
@@ -2424,16 +2426,16 @@ ul.nav-tabs li button.active {
   margin: auto;
   max-width: 700px;
 }
-.bix-hire-banner .bix-hire-contact h2 {
+.bix-hire-banner .bix-hire-contact h2 ,.bix-hire-banner .bix-hire-contact .bix-h2 {
   margin-bottom: 16px;
   font-size: 35px;
   color: #fff;
   font-weight: 700;
 }
-.bix-hire-banner .bix-hire-contact h2 span {
+.bix-hire-banner .bix-hire-contact h2 span ,.bix-hire-banner .bix-hire-contact .bix-h2 span {
   color: #f41a4a;
 }
-.bix-hire-banner .bix-hire-contact h4 {
+.bix-hire-banner .bix-hire-contact h4 ,.bix-hire-banner .bix-hire-contact .bix-h4 {
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 600;
@@ -2473,7 +2475,7 @@ ul.nav-tabs li button.active {
 
 /* Responsive */
 @media screen and (max-width: 1199px) {
-  .bix-hire-banner .bix-hire-contact h2 {
+  .bix-hire-banner .bix-hire-contact h2 ,  .bix-hire-banner .bix-hire-contact .bix-h2 {
     font-size: 32px;
   }
 }
@@ -2481,7 +2483,7 @@ ul.nav-tabs li button.active {
   .section-hire {
     padding: 100px 0;
   }
-  .bix-hire-banner .bix-hire-contact h2 {
+  .bix-hire-banner .bix-hire-contact h2 ,  .bix-hire-banner .bix-hire-contact .bix-h2 {
     font-size: 28px;
   }
 }
@@ -2493,10 +2495,10 @@ ul.nav-tabs li button.active {
   .section-hire {
     padding: 80px 0;
   }
-  .bix-hire-banner .bix-hire-contact h2 {
+  .bix-hire-banner .bix-hire-contact h2 ,  .bix-hire-banner .bix-hire-contact .bix-h2 {
     font-size: 24px;
   }
-  .bix-hire-banner .bix-hire-contact h4 {
+  .bix-hire-banner .bix-hire-contact h4 ,  .bix-hire-banner .bix-hire-contact .bix-h4 {
     font-size: 18px;
   }
 }
@@ -2533,7 +2535,7 @@ ul.nav-tabs li button.active {
   bottom: 0;
   z-index: -4;
 }
-.bix-testimonials .inner-banner h4 {
+.bix-testimonials .inner-banner h4 ,.bix-testimonials .inner-banner .bix-h4 {
   font-family: "Montserrat";
   font-size: 42px;
   font-weight: 700;
@@ -2640,7 +2642,7 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.bix-testimonials .bix-testimonials-inner .testimonials-contact h4 {
+.bix-testimonials .bix-testimonials-inner .testimonials-contact h4 ,.bix-testimonials .bix-testimonials-inner .testimonials-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 20px;
   color: #111a24;
@@ -2663,7 +2665,7 @@ ul.nav-tabs li button.active {
   .bix-testimonials .inner-banner {
     left: 90px;
   }
-  .bix-testimonials .inner-banner h4 {
+  .bix-testimonials .inner-banner h4 ,  .bix-testimonials .inner-banner .bix-h4 {
     font-size: 38px;
   }
   .bix-testimonials .testimonials-img-1 {
@@ -2697,7 +2699,7 @@ ul.nav-tabs li button.active {
   .bix-testimonials .bix-testimonials-inner {
     max-width: 800px;
   }
-  .bix-testimonials .bix-testimonials-inner .testimonials-image .inner-banner h4 {
+  .bix-testimonials .bix-testimonials-inner .testimonials-image .inner-banner h4 ,  .bix-testimonials .bix-testimonials-inner .testimonials-image .inner-banner .bix-h4 {
     font-size: 36px;
   }
 }
@@ -2715,7 +2717,7 @@ ul.nav-tabs li button.active {
   .bix-testimonials .inner-banner {
     left: 10px;
   }
-  .bix-testimonials .inner-banner h4 {
+  .bix-testimonials .inner-banner h4 ,  .bix-testimonials .inner-banner .bix-h4 {
     font-size: 34px;
   }
 }
@@ -2749,7 +2751,7 @@ ul.nav-tabs li button.active {
   }
 }
 @media screen and (max-width: 767px) {
-  .bix-testimonials .bix-testimonials-inner .testimonials-contact h4 {
+  .bix-testimonials .bix-testimonials-inner .testimonials-contact h4 ,  .bix-testimonials .bix-testimonials-inner .testimonials-contact .bix-h4 {
     margin-bottom: 4px;
     font-size: 18px;
     text-align: center;
@@ -2822,7 +2824,7 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.bix-blog-box .blog-contact h4 {
+.bix-blog-box .blog-contact h4 ,.bix-blog-box .blog-contact .bix-h4 {
   margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2830,14 +2832,14 @@ ul.nav-tabs li button.active {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.bix-blog-box .blog-contact h4 a {
+.bix-blog-box .blog-contact h4 a ,.bix-blog-box .blog-contact .bix-h4 a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
   font-weight: 600;
   color: #111a24;
 }
-.bix-blog-box .blog-contact h4 a:hover {
+.bix-blog-box .blog-contact h4 a:hover ,.bix-blog-box .blog-contact .bix-h4 a:hover {
   color: #f41a4a;
 }
 .bix-blog-box .blog-contact p {
@@ -3009,7 +3011,7 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.bix-about-contact h5 {
+.bix-about-contact h5 ,.bix-about-contact .bix-h5 {
   margin-bottom: 24px;
   font-size: 37px;
   font-weight: bold;
@@ -3021,7 +3023,7 @@ ul.nav-tabs li button.active {
 .bix-about-contact p {
   margin-bottom: 16px;
 }
-.bix-about-contact .about-name h6 {
+.bix-about-contact .about-name h6 ,.bix-about-contact .about-name .bix-h6 {
   margin-bottom: 0;
   font-size: 16px;
   color: #111a24;
@@ -3094,7 +3096,7 @@ ul.nav-tabs li button.active {
   color: #fff;
   letter-spacing: 1.3px;
 }
-.bix-rounded-circle h5 {
+.bix-rounded-circle h5 ,.bix-rounded-circle .bix-h5 {
   font-size: 10px;
   color: #fff;
 }
@@ -3291,13 +3293,13 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.bix-skill .skill-inner-box .skill-contact .skill-box-contact h4 {
+.bix-skill .skill-inner-box .skill-contact .skill-box-contact h4 ,.bix-skill .skill-inner-box .skill-contact .skill-box-contact .bix-h4 {
   font-size: 16px;
   font-weight: 600;
   color: #111a24;
   margin-bottom: 8px;
 }
-.bix-skill .skill-inner-box .skill-contact .skill-box-contact h4 span {
+.bix-skill .skill-inner-box .skill-contact .skill-box-contact h4 span ,.bix-skill .skill-inner-box .skill-contact .skill-box-contact .bix-h4 span {
   font-size: 13px;
   font-weight: 500;
 }
@@ -3359,12 +3361,12 @@ ul.nav-tabs li button.active {
 
 /* Responsive */
 @media screen and (max-width: 1399px) {
-  .bix-about-contact h5 {
+  .bix-about-contact h5 ,  .bix-about-contact .bix-h5 {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 1199px) {
-  .bix-about-contact h5 {
+  .bix-about-contact h5 ,  .bix-about-contact .bix-h5 {
     font-size: 28px;
   }
   .bix-about-img {
@@ -3388,7 +3390,7 @@ ul.nav-tabs li button.active {
   }
 }
 @media screen and (max-width: 575px) {
-  .bix-about-contact h5 {
+  .bix-about-contact h5 ,  .bix-about-contact .bix-h5 {
     font-size: 28px;
   }
   .bix-about-img .bix-rounded-circle {
@@ -3416,7 +3418,7 @@ ul.nav-tabs li button.active {
   }
 }
 @media screen and (max-width: 420px) {
-  .bix-about-contact h5 {
+  .bix-about-contact h5 ,  .bix-about-contact .bix-h5 {
     font-size: 22px;
   }
   .bix-about-img .bix-rounded-circle {
@@ -3560,18 +3562,18 @@ ul.nav-tabs li button.active {
   border: 1px solid #1b1c20;
   border-radius: 30px;
 }
-.bix-project-card .project-contact h5 {
+.bix-project-card .project-contact h5 ,.bix-project-card .project-contact .bix-h5 {
   margin-bottom: 2px;
   font-size: 18px;
 }
-.bix-project-card .project-contact h5 a {
+.bix-project-card .project-contact h5 a ,.bix-project-card .project-contact .bix-h5 a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
   font-weight: 600;
   color: #111a24;
 }
-.bix-project-card .project-contact h5 a:hover {
+.bix-project-card .project-contact h5 a:hover ,.bix-project-card .project-contact .bix-h5 a:hover {
   color: #f41a4a;
 }
 .bix-project-card .project-contact span {
@@ -3597,7 +3599,7 @@ ul.nav-tabs li button.active {
 
 /* Responsive */
 @media screen and (max-width: 1399px) {
-  .bix-project-card .project-contact h5 a {
+  .bix-project-card .project-contact h5 a ,  .bix-project-card .project-contact .bix-h5 a {
     font-size: 17px;
   }
   .bix-project-card .project-contact span {
@@ -3647,7 +3649,7 @@ ul.nav-tabs li button.active {
   font-weight: 600;
   color: #777;
 }
-.bix-services-box .services-header h4 {
+.bix-services-box .services-header h4 ,.bix-services-box .services-header .bix-h4 {
   font-size: 42px;
   font-weight: 700;
   color: #111a24;
@@ -3676,7 +3678,7 @@ ul.nav-tabs li button.active {
 
 /* Responsive */
 @media screen and (max-width: 767px) {
-  .bix-services-box .services-header h4 {
+  .bix-services-box .services-header h4 ,  .bix-services-box .services-header .bix-h4 {
     font-size: 34px;
   }
 }
@@ -3803,12 +3805,12 @@ ul.nav-tabs li button.active {
 .bix-resume-sidebar .resume-title {
   margin-bottom: 12px;
 }
-.bix-resume-sidebar .resume-title h4 {
+.bix-resume-sidebar .resume-title h4 ,.bix-resume-sidebar .resume-title .bix-h4 {
   font-size: 17px;
   font-weight: 700;
   color: #111a24;
 }
-.bix-resume-sidebar .resume-title h4 i {
+.bix-resume-sidebar .resume-title h4 i ,.bix-resume-sidebar .resume-title .bix-h4 i {
   margin-right: 10px;
 }
 .bix-resume-sidebar .resume-contact-info ul {
@@ -3842,7 +3844,7 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.bix-resume-sidebar .resume-education-info h4 {
+.bix-resume-sidebar .resume-education-info h4 ,.bix-resume-sidebar .resume-education-info .bix-h4 {
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 600;
@@ -3878,7 +3880,7 @@ ul.nav-tabs li button.active {
   width: 70px;
   border-radius: 20px;
 }
-.bix-resume-contact .sub-heading .inner-heading h4 {
+.bix-resume-contact .sub-heading .inner-heading h4 ,.bix-resume-contact .sub-heading .inner-heading .bix-h4 {
   margin-bottom: 4px;
   font-size: 26px;
   font-weight: 700;
@@ -3895,7 +3897,7 @@ ul.nav-tabs li button.active {
 .bix-resume-contact .inner-resume-contact .inner-title {
   margin-bottom: 16px;
 }
-.bix-resume-contact .inner-resume-contact .inner-title h5 {
+.bix-resume-contact .inner-resume-contact .inner-title h5 ,.bix-resume-contact .inner-resume-contact .inner-title .bix-h5 {
   font-size: 20px;
   font-weight: 700;
 }
@@ -3927,7 +3929,7 @@ ul.nav-tabs li button.active {
 .bix-resume-contact .inner-resume-contact .inner-experience:not(:last-child) {
   margin-bottom: 8px;
 }
-.bix-resume-contact .inner-resume-contact .inner-experience h5 {
+.bix-resume-contact .inner-resume-contact .inner-experience h5 ,.bix-resume-contact .inner-resume-contact .inner-experience .bix-h5 {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 700;
@@ -3960,7 +3962,7 @@ ul.nav-tabs li button.active {
 .bix-resume-contact .inner-resume-contact .inner-project:not(:last-child) {
   margin-bottom: 8px;
 }
-.bix-resume-contact .inner-resume-contact .inner-project h5 {
+.bix-resume-contact .inner-resume-contact .inner-project h5 ,.bix-resume-contact .inner-resume-contact .inner-project .bix-h5 {
   font-size: 16px;
   font-weight: 700;
   color: #111a24;
@@ -3978,12 +3980,12 @@ ul.nav-tabs li button.active {
 
 /* Responsive */
 @media screen and (max-width: 1399px) {
-  .bix-resume-contact .sub-heading .inner-heading h4 {
+  .bix-resume-contact .sub-heading .inner-heading h4 ,  .bix-resume-contact .sub-heading .inner-heading .bix-h4 {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 1199px) {
-  .bix-resume-contact .sub-heading .inner-heading h4 {
+  .bix-resume-contact .sub-heading .inner-heading h4 ,  .bix-resume-contact .sub-heading .inner-heading .bix-h4 {
     margin-bottom: 0;
     font-size: 20px;
   }
@@ -4004,10 +4006,10 @@ ul.nav-tabs li button.active {
     display: flex;
     margin-right: 15px;
   }
-  .bix-resume-contact .inner-resume-contact .inner-title h5 {
+  .bix-resume-contact .inner-resume-contact .inner-title h5 ,  .bix-resume-contact .inner-resume-contact .inner-title .bix-h5 {
     font-size: 18px;
   }
-  .bix-resume-contact .inner-resume-contact .inner-experience h5 {
+  .bix-resume-contact .inner-resume-contact .inner-experience h5 ,  .bix-resume-contact .inner-resume-contact .inner-experience .bix-h5 {
     font-size: 15px;
   }
 }
@@ -4041,7 +4043,7 @@ ul.nav-tabs li button.active {
 .bix-single-projects-sidebar .sub-title {
   margin-bottom: 12px;
 }
-.bix-single-projects-sidebar .sub-title h4 {
+.bix-single-projects-sidebar .sub-title h4 ,.bix-single-projects-sidebar .sub-title .bix-h4 {
   font-size: 20px;
   font-weight: 600;
   color: #111a24;
@@ -4081,11 +4083,11 @@ ul.nav-tabs li button.active {
   font-weight: 400;
   color: #777;
 }
-.bix-single-projects-sidebar .bix-recent-card .recent-contact h4 {
+.bix-single-projects-sidebar .bix-recent-card .recent-contact h4 ,.bix-single-projects-sidebar .bix-recent-card .recent-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 15px;
 }
-.bix-single-projects-sidebar .bix-recent-card .recent-contact h4 a {
+.bix-single-projects-sidebar .bix-recent-card .recent-contact h4 a ,.bix-single-projects-sidebar .bix-recent-card .recent-contact .bix-h4 a {
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
@@ -4145,7 +4147,7 @@ ul.nav-tabs li button.active {
 .bix-single-projects-contact .inner-projects-contact .sub-title {
   margin-bottom: 12px;
 }
-.bix-single-projects-contact .inner-projects-contact .sub-title h4 {
+.bix-single-projects-contact .inner-projects-contact .sub-title h4 ,.bix-single-projects-contact .inner-projects-contact .sub-title .bix-h4 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -4153,7 +4155,7 @@ ul.nav-tabs li button.active {
 .bix-single-projects-contact .inner-projects-contact p {
   margin-bottom: 16px;
 }
-.bix-single-projects-contact .inner-projects-contact .inner-contact h4 {
+.bix-single-projects-contact .inner-projects-contact .inner-contact h4 ,.bix-single-projects-contact .inner-projects-contact .inner-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
@@ -4183,7 +4185,7 @@ ul.nav-tabs li button.active {
 .bix-single-projects-contact .bix-product-details .bix-product-details-card:hover {
   border-color: #1b1c20;
 }
-.bix-single-projects-contact .bix-product-details .bix-product-details-card h4 {
+.bix-single-projects-contact .bix-product-details .bix-product-details-card h4 ,.bix-single-projects-contact .bix-product-details .bix-product-details-card .bix-h4 {
   font-size: 18px;
   font-weight: 600;
   color: #111a24;
@@ -4204,7 +4206,7 @@ ul.nav-tabs li button.active {
 .bix-single-projects-contact .bix-products-tabs .tab-content .products-tabs-details p {
   margin-bottom: 16px;
 }
-.bix-single-projects-contact .bix-products-tabs .tab-content .products-tabs-details .inner-contact h4 {
+.bix-single-projects-contact .bix-products-tabs .tab-content .products-tabs-details .inner-contact h4 ,.bix-single-projects-contact .bix-products-tabs .tab-content .products-tabs-details .inner-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
@@ -4247,7 +4249,7 @@ ul.nav-tabs li button.active {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.bix-client .inner-details .client-details h5 {
+.bix-client .inner-details .client-details h5 ,.bix-client .inner-details .client-details .bix-h5 {
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 600;
@@ -4262,7 +4264,8 @@ ul.nav-tabs li button.active {
   line-height: 22px;
 }
 
-.bix-reviews-details h4 {
+.bix-reviews-details h4 ,
+.bix-reviews-details .bix-h4 {
   margin-bottom: 24px;
   font-size: 18px;
   font-weight: 600;
@@ -4315,21 +4318,21 @@ ul.nav-tabs li button.active {
   .bix-single-projects-contact .inner-projects-img {
     margin: 0;
   }
-  .bix-single-projects-contact .inner-projects-contact .sub-title h4 {
+  .bix-single-projects-contact .inner-projects-contact .sub-title h4 ,  .bix-single-projects-contact .inner-projects-contact .sub-title .bix-h4 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 991px) {
-  .bix-single-projects-contact .inner-projects-contact .sub-title h4 {
+  .bix-single-projects-contact .inner-projects-contact .sub-title h4 ,  .bix-single-projects-contact .inner-projects-contact .sub-title .bix-h4 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  .bix-single-projects-contact .inner-projects-contact .sub-title h4 {
+  .bix-single-projects-contact .inner-projects-contact .sub-title h4 ,  .bix-single-projects-contact .inner-projects-contact .sub-title .bix-h4 {
     font-size: 20px;
     line-height: 28px;
   }
-  .bix-single-projects-contact .inner-projects-contact .inner-contact h4 {
+  .bix-single-projects-contact .inner-projects-contact .inner-contact h4 ,  .bix-single-projects-contact .inner-projects-contact .inner-contact .bix-h4 {
     font-size: 18px;
   }
   .bix-client .inner-details {
@@ -4357,13 +4360,13 @@ ul.nav-tabs li button.active {
   .bix-single-projects-contact .bix-products-tabs .tab-content {
     padding: 15px;
   }
-  .bix-single-projects-contact .inner-projects-contact .sub-title h4 {
+  .bix-single-projects-contact .inner-projects-contact .sub-title h4 ,  .bix-single-projects-contact .inner-projects-contact .sub-title .bix-h4 {
     font-size: 18px;
   }
-  .bix-single-projects-contact .inner-projects-contact .inner-contact h4 {
+  .bix-single-projects-contact .inner-projects-contact .inner-contact h4 ,  .bix-single-projects-contact .inner-projects-contact .inner-contact .bix-h4 {
     font-size: 16px;
   }
-  .bix-single-projects-sidebar .sub-title h4 {
+  .bix-single-projects-sidebar .sub-title h4 ,  .bix-single-projects-sidebar .sub-title .bix-h4 {
     font-size: 18px;
   }
 }
@@ -4391,7 +4394,7 @@ ul.nav-tabs li button.active {
   font-weight: 400;
   color: #777;
 }
-.bix-blog-sidebar .inner-details .inner-blog-contact h4 {
+.bix-blog-sidebar .inner-details .inner-blog-contact h4 ,.bix-blog-sidebar .inner-details .inner-blog-contact .bix-h4 {
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 700;
@@ -4400,7 +4403,7 @@ ul.nav-tabs li button.active {
 .bix-blog-sidebar .sub-title {
   margin-bottom: 12px;
 }
-.bix-blog-sidebar .sub-title h4 {
+.bix-blog-sidebar .sub-title h4 ,.bix-blog-sidebar .sub-title .bix-h4 {
   font-size: 18px;
   font-weight: 700;
   color: #111a24;
@@ -4442,11 +4445,11 @@ ul.nav-tabs li button.active {
   font-weight: 400;
   color: #777;
 }
-.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 {
+.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 ,.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact .bix-h4 {
   margin-bottom: 4px;
   font-size: 18px;
 }
-.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 a {
+.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 a ,.bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact .bix-h4 a {
   font-size: 18px;
   font-weight: 700;
   color: #111a24;
@@ -4480,11 +4483,11 @@ ul.nav-tabs li button.active {
           justify-content: center;
   padding-left: 15px;
 }
-.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact h5 {
+.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact h5 ,.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact .bix-h5 {
   margin-bottom: 8px;
   font-size: 13px;
 }
-.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact h5 a {
+.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact h5 a ,.bix-blog-sidebar .bix-blog-sub-details .blog-rows-card .inner-contact .bix-h5 a {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
@@ -4514,7 +4517,7 @@ ul.nav-tabs li button.active {
 .bix-blog-contact .inner-main-contact .main-blog-contact .main-title {
   margin-bottom: 8px;
 }
-.bix-blog-contact .inner-main-contact .main-blog-contact .main-title h4 {
+.bix-blog-contact .inner-main-contact .main-blog-contact .main-title h4 ,.bix-blog-contact .inner-main-contact .main-blog-contact .main-title .bix-h4 {
   font-size: 18px;
   font-weight: 700;
   color: #111a24;
@@ -4538,7 +4541,7 @@ ul.nav-tabs li button.active {
 .bix-blog-contact .inner-replies-contact .main-title {
   margin-bottom: 16px;
 }
-.bix-blog-contact .inner-replies-contact .main-title h4 {
+.bix-blog-contact .inner-replies-contact .main-title h4 ,.bix-blog-contact .inner-replies-contact .main-title .bix-h4 {
   font-size: 18px;
   font-weight: 700;
   color: #111a24;
@@ -4552,22 +4555,22 @@ ul.nav-tabs li button.active {
   .bix-blog-sidebar .inner-details .inner-blog-contact {
     padding: 15px;
   }
-  .bix-blog-sidebar .inner-details .inner-blog-contact h4 {
+  .bix-blog-sidebar .inner-details .inner-blog-contact h4 ,  .bix-blog-sidebar .inner-details .inner-blog-contact .bix-h4 {
     font-size: 18px;
   }
   .bix-blog-sidebar .bix-categories, .bix-blog-sidebar .bix-recent-post, .bix-blog-sidebar .bix-blog-sub-details {
     padding: 15px;
   }
-  .bix-blog-sidebar .sub-title h4 {
+  .bix-blog-sidebar .sub-title h4 ,  .bix-blog-sidebar .sub-title .bix-h4 {
     font-size: 16px;
   }
-  .bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 a {
+  .bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact h4 a ,  .bix-blog-sidebar .bix-recent-post .bix-recent-card .recent-contact .bix-h4 a {
     font-size: 16px;
   }
   .bix-blog-contact .inner-main-contact .main-blog-contact, .bix-blog-contact .inner-main-contact .inner-blog-details-2colum {
     padding: 15px;
   }
-  .bix-blog-contact .inner-main-contact .main-blog-contact .main-title h4 {
+  .bix-blog-contact .inner-main-contact .main-blog-contact .main-title h4 ,  .bix-blog-contact .inner-main-contact .main-blog-contact .main-title .bix-h4 {
     font-size: 16px;
   }
   .bix-blog-contact .inner-replies-contact {
@@ -4673,5 +4676,3 @@ ul.nav-tabs li button.active {
       line-height: 50px; /* Center icon vertically for mobile */
       font-size: 35px; /* Adjust icon size for mobile */
   }
-}
-/*# sourceMappingURL=style.css.map */
