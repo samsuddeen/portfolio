@@ -32,7 +32,7 @@
 ## PROGRESS (update after each step)
 - [x] STEP B: finish headings, links, accessibility, breadcrumbs, 404.html (all pages)
 - [x] STEP C: JSON-LD, Open Graph, robots.txt, sitemap.xml, llms.txt, manifest, contact block
-- [ ] STEP R1: index.html resume content
+- [x] STEP R1: index.html resume content
 - [ ] STEP R2: about.html resume content
 - [ ] STEP R3: resume.html resume content
 - [ ] STEP R4: projects.html resume content
