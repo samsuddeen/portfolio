@@ -1,4 +1,4 @@
-# SEO-TASKS-V2.md (single source of truth, replaces SEO-TASKS.md and SEO-FIXES.md)
+# SEO-TASKS.md (V3: only pending work; completed steps removed)
 
 ## GLOBAL RULES (apply to every step)
 - NEVER run `git push`, `git pull`, `git merge` into master, never deploy, never publish. LOCAL commits only.
@@ -7,7 +7,7 @@
 - Do NOT touch, commit, delete or rename `assets/shamsudin-resume.pdf` or `assets/shamsudin-resume_old.pdf` (I manage the PDFs myself).
 - Work on ONE step at a time. After finishing a step: tick its checkbox in PROGRESS, make a local commit, print a short changelog, then STOP and wait for me. Do not start the next step.
 - Before starting a step: run `git status` and `git log --oneline -10`, and check what is already done so you only finish what is missing.
-- The site must look IDENTICAL to the original at `origin/master`. Do not change design, colors, spacing, fonts, layout, CSS class names/IDs, animations or functionality unless a step says so. Use `git show origin/master:<file>` to compare when unsure.
+- The site must look IDENTICAL to the original at `origin/master` (except where a step changes text content). Do not change design, colors, spacing, fonts, layout, CSS class names/IDs, animations or functionality unless a step says so. Use `git show origin/master:<file>` to compare when unsure.
 - Do not invent facts, numbers, links, clients, addresses or images. Use `<!-- TODO -->` for missing info.
 - Keep all existing .html URLs working (no clean URLs).
 - Never add outbound links to auditsystemshangrilabank.com or audit.trilokyasoft.com (private bank system). Show that project as text only.
@@ -17,50 +17,38 @@
 - Site: https://shamsudinaalam.com.np (NON-www is canonical). Static HTML/CSS/JS on GitHub Pages behind Cloudflare.
 - Pages: index.html, about.html, projects.html, resume.html, services.html
 - Owner: Shamsudin Aalam (also spelled Samsudin Alam)
-- Main role: **Software Developer** (specialty: Laravel & PHP). 3+ years experience.
+- Main role: **Software Developer** (specialty: Laravel & PHP). 3+ years experience. Currently learning Python and Django.
 - Location: **Kathmandu, Nepal** (public pages say only this; no street address)
 - Phone: +977-9816266897 (tel: link) | Email: shamsudinaalam@gmail.com (mailto: link)
 - Geo: geo.region NP-BA, geo.placename Kathmandu, geo.position 27.7172;85.3240, ICBM 27.7172, 85.3240
 - JSON-LD address: addressLocality Kathmandu, addressRegion Bagmati Province, addressCountry NP, geo 27.7172 / 85.3240, areaServed Kathmandu, Nepal and Worldwide
 - "Birgunj" may remain ONLY in the education entry "Birgunj Institute of Technology" (old college name).
 
-## CURRENT STATUS
+## ALREADY DONE (do not redo)
+- STEP A: titles, meta descriptions, canonicals, lang, hreflang removal, Kathmandu in meta/JSON-LD/text (commit 33ec524).
+- STEP B-FIX: index.html hero restored, single H1 "Shamsudin Aalam" + hidden `.sr-only` keywords, tagline "Software Developer", tags closed, `.sr-only` CSS added (commit c2cd849).
 - Nothing has been pushed. Live site is still the original.
-- STEP A is done (commit 33ec524).
-- STEP B is partly done on index.html only (commits 5877716 "bix-hN classes", 5287b5c "wip step B", plus uncommitted edits in index.html). It introduced visual bugs, see STEP B-FIX.
 
 ## PROGRESS (update after each step)
-- [x] STEP A: title, meta description, canonical, hreflang, language, location change
-- [x] STEP B-FIX: repair visual bugs from the partial Step B (do this FIRST)
-- [ ] STEP B: headings, links, accessibility, 404.html (finish for all pages)
+- [x] STEP B: finish headings, links, accessibility, breadcrumbs, 404.html (all pages)
 - [ ] STEP C: JSON-LD, Open Graph, robots.txt, sitemap.xml, llms.txt, manifest, contact block
-- [ ] STEP R: resume content + role wording
+- [ ] STEP R1: index.html resume content
+- [ ] STEP R2: about.html resume content
+- [ ] STEP R3: resume.html resume content
+- [ ] STEP R4: projects.html resume content
+- [ ] STEP R5: services.html resume content
+- [ ] STEP R6: footer/contact + role wording + SEO text consistency on all pages
 - [ ] STEP D: images
 - [ ] STEP E: JS/CSS performance, static content
 - [ ] STEP F: headers, Cloudflare notes, final verification
 
 ---
 
-## STEP A (DONE, for reference only)
-Titles (50-60 chars), meta descriptions (120-160 chars), self-referencing non-www canonicals, no hreflang, `lang="en"`, Birgunj -> Kathmandu in meta/JSON-LD/text, orphan files removed.
-
-## STEP B-FIX: Repair the partial Step B (index.html). Do this first.
-Problem: the home H1 now shows "Shamsudin Aalam - Laravel Developer & Full Stack Engineer" in the huge heading style, it wraps over 4 lines, and the fixed header overlaps the "Hi, I am" line.
-1. The VISIBLE H1 text and style must be exactly as in `origin/master`: "Shamsudin Aalam", same size and wrapping.
-2. Keywords go ONLY in visually hidden text:
-   `<h1>Shamsudin Aalam<span class="sr-only"> - Software Developer in Kathmandu, Nepal</span></h1>`
-   Define `.sr-only` in the CSS (position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0). Do NOT use display:none.
-3. Change the tagline "I am a PHP/Laravel Developer" to "I am a Software Developer", same markup and typing/animation behavior.
-4. Compare the hero and header with `git show origin/master:index.html` and the CSS. Confirm layout and header position are identical on desktop and mobile widths.
-5. Compare EVERY heading changed by the earlier Step B commits (the `bix-hN` classes mirror the hN styles) against `origin/master`: same font-size, weight, color, margin, line-height. Fix any difference with CSS only. Keep exactly one H1, no skipped levels.
-6. Run `git diff index.html` on the uncommitted edits: make sure no broken tags, exactly one `</main>`, one `</body>`, one `</html>`, WhatsApp button inside `<body>`.
-7. Commit only index.html and the CSS file you touched. Tick STEP B-FIX. STOP.
-
-## STEP B: Headings, links, accessibility (all pages)
-1. HEADINGS: exactly one H1 per page (first in main content), then H2 sections, H3 subsections, no skipped levels. Card titles, skill names and labels that are not real headings become `<p>`/`<span>`/`<strong>` with CSS classes that keep the exact same look.
-2. H1 RULE (important): keep the ORIGINAL visible heading text and style on every page. Add SEO keywords only in a `.sr-only` span inside the H1 (home: "Shamsudin Aalam" + hidden " - Software Developer in Kathmandu, Nepal"; about: visible original title + hidden " - Software Developer in Kathmandu, Nepal"; same idea for projects, resume, services). NEVER enlarge or restyle a visible H1. If an inner page has no visible H1, use the existing page-title/breadcrumb title element as the H1 without changing its look.
-3. LINKS: add `rel="noopener noreferrer"` to every `target="_blank"`; `nofollow` for non-essential third-party links. No empty anchors (add text, or aria-label + title on icon links). Unique descriptive anchor texts (no "click here"/"read more").
-4. Add visible breadcrumbs on inner pages (matching the site style) and footer links to all main pages. Create `404.html` in the site style.
+## STEP B: Headings, links, accessibility (finish for all 5 pages)
+1. HEADINGS: exactly one H1 per page (first in main content), then H2 sections, H3 subsections, no skipped levels. Card titles, skill names and labels that are not real headings become `<p>`/`<span>`/`<strong>` with CSS classes that keep the exact same look (reuse the existing `bix-hN` approach). index.html: the H1 is done; verify the rest of its hierarchy (H2/H3, no skipped levels).
+2. H1 RULE: keep the ORIGINAL visible heading text and style on every page. Add SEO keywords only in a `.sr-only` span inside the H1 (about, projects, resume, services: original visible title + hidden " - Software Developer in Kathmandu, Nepal"). NEVER enlarge or restyle a visible H1. If an inner page has no visible H1, use the existing page-title/breadcrumb title element as the H1 without changing its look.
+3. LINKS (all pages, including index.html): add `rel="noopener noreferrer"` to every `target="_blank"`; `nofollow` for non-essential third-party links. No empty anchors (add text, or aria-label + title on icon links). Unique descriptive anchor texts (no "click here"/"read more").
+4. Add visible breadcrumbs on inner pages (matching the site style; reuse the existing inner-banner/breadcrumb area if present) and footer links to all main pages. Create `404.html` in the site style.
 5. ACCESSIBILITY: semantic header/nav/main/section/footer, skip link (visually hidden until focused), aria-labels, doctype first, charset first in head, no duplicate IDs.
 6. Each of `</main>`, `</body>`, `</html>` exactly once on every page, WhatsApp button inside `<body>`.
 7. Compare each page with `origin/master` for visual identity. Tick STEP B, commit, STOP.
@@ -74,20 +62,25 @@ Problem: the home H1 now shows "Shamsudin Aalam - Laravel Developer & Full Stack
 6. `site.webmanifest`: fix name, short_name, icon paths. Keep theme-color, favicon, apple-touch-icon.
 7. Footer/contact block on all pages: "Kathmandu, Nepal", mailto and tel links. No invented street address.
 
-## STEP R: Resume content and role wording
-Change only text content. Keep HTML structure, classes, IDs and animations. If a section has fewer/more items than the resume, copy an existing item's markup. Anything on the site that is NOT in the resume must be kept and listed at the end under "Not in resume - decide". Use the wording below as closely as possible; only shorten if it does not fit the existing card layout, and list every shortened item in the final report.
+## STEP R (R1 to R6): Resume content and role wording
+General rules for ALL R steps:
+- Do ONE sub-step (R1, R2, ...) per run, then commit and STOP.
+- Change only text content. Keep HTML structure, classes, IDs, animations and CSS. If a section has fewer/more items than the resume, COPY an existing item's markup and fill it with the new text. Do not invent new designs.
+- Process for every page: (a) read the whole page; (b) write me a short table "current text vs resume text" for each section; (c) edit; (d) VERIFY by grepping the page that every required resume string for that page (listed in its sub-step) is really present, and print the result as a checklist (found / missing). Do not tick the step if anything is missing.
+- Use the wording of RESUME DATA below exactly. Only shorten if it does not fit the card layout, and list every shortened item in the report.
+- Old items not in the resume: on resume.html and about.html (experience, education, skills, certifications) the resume REPLACES outdated entries (old text stays recoverable in git history; list what you removed). On index.html, projects.html and services.html keep old items and list them under "Not in resume - decide".
+- Never add new outbound links. Existing live-project links stay.
 
 ### Role wording
 - Main role = "Software Developer". Where a specialty is needed: "Software Developer specializing in Laravel & PHP".
-- Replace "Laravel Backend Developer" / "Laravel Developer" used as my main title with that wording (hero, about, resume, services, footer, titles, descriptions, H1 hidden text, og/twitter, JSON-LD, llms files, manifest).
+- Replace "Laravel Backend Developer" / "Laravel Developer" used as my main title with that wording. Real job titles inside the experience timeline stay "Laravel (PHP) Developer" as in the resume.
 - Replace "5+ years" and "Full Stack Designer"-style claims with "3+ years" and "Software Developer".
-- Do NOT change real job titles in the experience timeline (they stay "Laravel (PHP) Developer").
-- Keep the phrase "Laravel developer" at least once in the home meta description and the about text.
-- Re-check title (50-60 chars) and meta description (120-160 chars) afterwards.
-- JSON-LD: knowsAbout = Software Development, Laravel, PHP, REST API, MySQL, PostgreSQL, Docker, GitLab CI/CD, Vue.js; alumniOf = LBEF Campus, Birgunj Institute of Technology.
+- Keep the phrase "Laravel developer" at least once in the home meta description and in the about text.
+- Do NOT put Django or Python in titles, H1, meta descriptions or og tags. They appear only in the skills list and the about text as "currently learning".
 
-### Resume data (source of truth, wording from my resume)
+### RESUME DATA (source of truth)
 SUMMARY: Software Developer specializing in Laravel & PHP with 3+ years of experience building production-grade APIs, enterprise web applications, and third-party integrations (Amadeus, DHL, FedEx, payment gateways). Currently developing a banking audit system for Shangrila Bank, with hands-on experience in Docker containerization and GitLab CI/CD pipelines for automated deployment. Specialized in MySQL and PostgreSQL optimization, RESTful API development, and server deployment on DigitalOcean/Ubuntu. Frontend collaboration experience with Vue.js and Bootstrap.
+ABOUT-ONLY EXTRA LINE: "I am also currently learning Python and Django to broaden my backend skills."
 
 EXPERIENCE (newest first)
 1. Laravel (PHP) Developer, Trilokya Technology Pvt Ltd, Kathmandu, Nepal, June 2026 - Present
@@ -114,7 +107,7 @@ PROJECTS
 1. Shangrila Bank Audit System (2026) - Laravel, MySQL, Docker, GitLab CI/CD
    - Building an enterprise audit management system for Shangrila Bank to digitize and streamline internal audit workflows and compliance reporting.
    - Containerized the app with Docker and built a GitLab CI/CD pipeline for automated testing and deployment across environments.
-   - (No public link and NO outbound links: it runs on the bank's private network.)
+   - (No public link and NO outbound links: private bank network.)
 2. Order E-commerce Platform (2024) - Laravel, MySQL, Bootstrap, Vue.js
    - Developed a full-featured e-commerce platform with Vue.js frontend and efficient order management for seamless shopping experiences.
    - Integrated secure payment gateways and optimized inventory workflows using efficient database queries to ensure reliable product availability.
@@ -130,17 +123,16 @@ PROJECTS
 6. Lekhabidhi HR Management System (2024) - Laravel, MySQL, Bootstrap, Vue.js
    - Developed a scalable HR management system handling attendance, payroll, employee records, and organizational workflows.
    - Implemented role-based access control, leave management, and efficient HR operations tracking.
-(Existing projects that already have a live URL on the site keep their links. Do not add new links.)
 
 SKILLS
-- Backend: PHP, Laravel, RESTful APIs, SOAP API integration
+- Backend: PHP, Laravel, RESTful APIs, SOAP API integration, Python and Django (currently learning)
 - Database: MySQL, PostgreSQL
 - Deployment & DevOps: Docker, GitLab CI/CD, Ubuntu Linux, DigitalOcean, Nginx, Apache, cPanel, CloudPanel, SSH
 - API & Integrations: Amadeus, DHL, FedEx, Plazmatech SOAP, eSewa, Khalti, ConnectIPS, HBL, Fonepay, Stripe, PayPal
 - Frontend Collaboration: Vue.js, Bootstrap, jQuery, AJAX
 - Developer Tools: Git, GitHub, GitLab, Postman, Composer, VS Code, TablePlus, FileZilla, XAMPP
 - Other: SEO Optimization, Google Search Console, FFmpeg, Zoho Mail, Slack
-(Keep existing progress-bar percentages for existing skills; for new skills reuse a similar value and list them for me.)
+Progress bars/percentages: keep existing values for skills that already exist. For new skills reuse a similar existing value, EXCEPT Python and Django: use a LOW value (about 30%) and label them "(Learning)". List every new skill and its percentage in the report so I can review.
 
 CERTIFICATIONS
 - Laravel Advanced: Building Real-World Applications - Udemy
@@ -151,20 +143,36 @@ EXTRACURRICULAR
 - Volunteered in local coding workshops, promoting learning and teamwork among students.
 - Participated in tech competitions and collaborated with peers to solve programming challenges.
 
-### Where to update
-1. index.html: hero role line ("Software Developer"), short bio (mention Laravel & PHP), counters (3+ years, 10+ web applications), skills, featured projects.
-2. about.html: summary, experience timeline, education, certifications, extracurricular.
-3. resume.html: experience, education, skills, certifications. Resume download button points to the PDF in assets/ (same filename as before; I replace the file myself).
-4. projects.html: the 6 projects. Keep filters working; use the closest existing category.
-5. services.html: wording aligned with real skills (Laravel web applications, REST API development, third-party API and payment integration, deployment and DevOps with Docker/GitLab CI/CD, database optimization). Keep layout and accordion.
-6. Footer/contact on all pages: mailto, tel, "Kathmandu, Nepal".
+### R1: index.html
+Update hero bio/short summary (mention Laravel & PHP), counters (3+ years, 10+ web applications), skills section (with Python/Django as learning), featured projects, short experience/education if shown.
+Required strings to verify: "3+", "10+", "Software Developer", "Laravel", "Django", the 6 project titles if projects are shown.
 
-### Final report for Step R
-Files/sections changed; "Not in resume - decide" list; new skills needing percentage review; shortened items; any structure mismatch where you made a choice. Also tell me the WhatsApp number in the index.html wa.me link so I can verify it.
+### R2: about.html
+Full SUMMARY, ABOUT-ONLY EXTRA LINE, experience timeline (4 jobs with dates and bullets), education (2 entries), certifications (3), extracurricular (2), skills if shown.
+Required strings: "Trilokya Technology", "Nectar Digit", "Des Vu Technologies", "Prosoft Nepal", "June 2026", "June 2024", "November 2023", "June 2023", "LBEF Campus", "Birgunj Institute of Technology", "3.5/4.0", "Udemy", "Maximilian", "learning Python and Django".
+
+### R3: resume.html (this page was NOT updated before; do it carefully)
+Experience (4 jobs, all bullets), education (2), skills (all 7 categories incl. Python/Django learning), certifications (3), extracurricular if the page has a place for it (otherwise skip and tell me). Remove outdated entries that conflict and list them in the report. The resume download button must point to `assets/shamsudin-resume.pdf` (same filename that exists now; do not touch the file).
+Required strings: all required strings from R2, plus "Shangrila Bank", "Docker", "GitLab CI/CD", "PostgreSQL", "Amadeus", "eSewa", "Khalti", "ConnectIPS", "Fonepay", "Stripe", "PayPal", "CloudPanel", "TablePlus", "Google Search Console", "FFmpeg", "Zoho Mail", "Slack", "Python", "Django".
+
+### R4: projects.html
+Make sure the 6 resume projects exist as cards with title, year, tech stack and the two bullets of description. If a card with the same project already exists, update its text; otherwise copy an existing card's markup. Keep existing cards, filters and category buttons working; use the closest existing category. Keep existing live links, add none. Shangrila project: text only.
+Required strings: the 6 project titles, "Amadeus", "DHL", "eSewa", "Khalti", "role-based access control".
+
+### R5: services.html
+Rewrite service wording to match real skills, keeping layout and accordion: Laravel web application development, REST API development, third-party API and payment gateway integration (Amadeus, DHL, FedEx, eSewa, Khalti, Stripe, PayPal), deployment and DevOps (Docker, GitLab CI/CD, DigitalOcean, Ubuntu, Nginx), database design and optimization (MySQL, PostgreSQL). Old services not matching (for example graphic design) are kept and listed under "Not in resume - decide".
+Required strings: "REST API", "Docker", "PostgreSQL", "payment".
+
+### R6: footer/contact, role wording, SEO text consistency (all 5 pages + llms files + manifest)
+- Footer/contact: mailto, tel, "Kathmandu, Nepal".
+- Apply the Role wording rules everywhere (hero, about, resume, services, footer, titles, descriptions, H1 hidden text, og/twitter, JSON-LD, llms.txt, llms-full.txt, site.webmanifest).
+- JSON-LD: Person.jobTitle "Software Developer"; knowsAbout = Software Development, Laravel, PHP, REST API, MySQL, PostgreSQL, Docker, GitLab CI/CD, Vue.js, Python, Django; alumniOf = LBEF Campus, Birgunj Institute of Technology; telephone and email on Person and ProfessionalService.
+- Re-check title (50-60 chars) and meta description (120-160 chars) on every page.
+- FINAL REPORT for all of Step R: files/sections changed; "Not in resume - decide" list; removed outdated entries; new skills with percentages; shortened items; structure mismatches and choices made. Also print the WhatsApp number in the index.html wa.me link so I can verify it.
 
 ## STEP D: Images (do this alone)
 1. Start with the largest files (project/*.png, hero/newpic.jpg, hire/bg.png) and CSS backgrounds (hire/bg.png, breadcrumb/bg.jpg, shapes). Convert to WebP, resize (hero max ~1600px, cards ~800px), quality 70-80%.
-2. Add width/height to every `<img>`, `loading="lazy"` + `decoding="async"` to below-the-fold images, unique descriptive alt (decorative = `alt=""`). Check that width/height do not distort the images (keep aspect ratio and existing CSS sizing).
+2. Add width/height to every `<img>`, `loading="lazy"` + `decoding="async"` to below-the-fold images, unique descriptive alt (decorative = `alt=""`). Check that width/height do not distort images (keep aspect ratio and existing CSS sizing).
 3. Hero image: NOT lazy, `fetchpriority="high"` and `<link rel="preload" as="image">`.
 4. Keep original files until everything works. Update all references in HTML and CSS. Report before/after total size (target under 3 MB per page).
 

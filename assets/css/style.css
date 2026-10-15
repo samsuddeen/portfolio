@@ -211,7 +211,8 @@ h4,
 }
 
 /* Accessibility utility: visually hidden, still read by screen readers and crawlers */
-.sr-only {
+.sr-only,
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -221,6 +222,24 @@ h4,
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #111a24;
+  color: #fff;
+  text-decoration: none;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  white-space: normal;
 }
 
 /* Loader */
@@ -1211,6 +1230,37 @@ header .collapse:not(.show) {
 footer {
   background-color: #f7f5fb;
   padding: 10px 0;
+}
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.footer-links ul li {
+  list-style: none;
+}
+.footer-links ul li a {
+  display: inline-block;
+  padding: 0 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+  line-height: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links ul li a:hover {
+  color: #f41a4a;
 }
 
 .bix-footer-contact {

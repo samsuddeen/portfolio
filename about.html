@@ -236,7 +236,9 @@
     </script>
 </head>
 
-<body>
+<body id="Top">
+
+    <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
     <!-- Loader -->
     <div class="bix-loader">
@@ -302,7 +304,7 @@
     <div id="in_mobile_menu" class="bix-side-cart bix-mobile-menu">
         <div class="bix-menu-title">
             <div class="menu-title">
-                <h4>Menu</h4>
+                <p class="bix-h4">Menu</p>
             </div>
             <button type="button" class="bix-close">×</button>
         </div>
@@ -345,8 +347,8 @@
                     <div class="bix-breadcrumb">
                         <div class="breadcrumb-overlay"></div>
                         <div class="breadcrumb-contact">
-                            <h4>About</h4>
-                            <h5>
+                            <h1 class="bix-h4">About<span class="sr-only"> - Software Developer in Kathmandu, Nepal</span></h1>
+                            <nav class="bix-h5" aria-label="Breadcrumb">
                                 <span>
                                     <a href="/">Home</a>
                                 </span>
@@ -356,13 +358,16 @@
                                 <span class="disable">
                                     <a href="javascript:void(0)">About</a>
                                 </span>
-                            </h5>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <main id="main">
+
 
     <section class="section-about padding-tb-50">
         <div class="container">
@@ -377,13 +382,13 @@
                 <div class="col-lg-6 col-12 mb-24">
                     <div class="bix-about-contact">
                         <div class="bix-banner bix-text-left">
-                            <h4>About <span>Me</span></h4>
+                            <h2 class="bix-h4">About <span>Me</span></h2>
                         </div>
-                        <h5>“Turning creative ideas into practical solutions.”</h5>
+                        <p class="bix-h5">“Turning creative ideas into practical solutions.”</p>
                         <p>Hello! I’m Shamsudin Aalam, a passionate web developer with a knack for creating functional, visually appealing, and user-friendly websites. With several years of experience in both frontend and backend development, I specialize in delivering custom web solutions that help businesses grow and stand out online.</p>
                         <p>My expertise spans across various technologies, including HTML, CSS, JavaScript, PHP, and Laravel. I’m always eager to learn new trends and technologies to keep my skills up to date. Whether you need a personal portfolio, an e-commerce site, or a complex web application, I’m here to bring your vision to life.</p>
                         <div class="about-name">
-                            <h6>Web Developer & Designer</h6>
+                            <p class="bix-h6">Web Developer & Designer</p>
                             <p>Shamsudin Aalam</p>
                             <div class="inner-sign-items">
                                 <img src="assets/img/about/sign.png" alt="sign" class="white-mode">
@@ -423,7 +428,7 @@
                                     <text class="value" x="50%" y="58%">80%</text>
                                 </svg>
                                 <div class="skill-box-contact">
-                                    <h4>Frontend <span>(Vue.js,Bootstrap, React)</span></h4>
+                                    <p class="bix-h4">Frontend <span>(Vue.js,Bootstrap, React)</span></p>
                                     <p>I specialize in creating highly interactive and responsive frontends using modern JavaScript frameworks like Vue and React, delivering smooth user experiences.</p>
                                 </div>
                             </div>
@@ -449,7 +454,7 @@
                                     <text class="value" x="50%" y="58%">85%</text>
                                 </svg>
                                 <div class="skill-box-contact">
-                                    <h4>Backend <span>(PHP, Laravel)</span></h4>
+                                    <p class="bix-h4">Backend <span>(PHP, Laravel)</span></p>
                                     <p>Proficient in backend development, I work extensively with Laravel to create secure, scalable, and feature-rich web applications tailored to clients' needs.</p>
                                 </div>
                             </div>
@@ -475,7 +480,7 @@
                                     <text class="value" x="50%" y="58%">80%</text>
                                 </svg>
                                 <div class="skill-box-contact">
-                                    <h4>Database Management <span>(MySQL, PostgreSQL)</span></h4>
+                                    <p class="bix-h4">Database Management <span>(MySQL, PostgreSQL)</span></p>
                                     <p>I have a strong foundation in managing databases, ensuring the integrity, performance, and security of data for various web applications.</p>
                                 </div>
                             </div>
@@ -508,7 +513,7 @@
                                     <text class="value" x="50%" y="58%">85%</text>
                                 </svg>
                                 <div class="skill-box-contact">
-                                    <h4>Deployment <span>(DigitalOcean, Ubuntu Linux,cPanel, CyberPanel, Hostinger)</span></h4>
+                                    <p class="bix-h4">Deployment <span>(DigitalOcean, Ubuntu Linux,cPanel, CyberPanel, Hostinger)</span></p>
                                     <p>I’m experienced in deploying websites and web apps using hosting control panels and cloud servers like cPanel, CyberPanel, DigitalOcean, and Ubuntu Linux, ensuring smooth launches and server management.</p>
                                 </div>
                             </div>
@@ -527,7 +532,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="bix-banner" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-                        <h4>Echoes of <span>Brilliance</span></h4>
+                        <h2 class="bix-h4">Echoes of <span>Brilliance</span></h2>
                     </div>
                     <div class="bix-banner-line" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                         <span class="inner-border"></span>
@@ -542,7 +547,7 @@
                         <img src="assets/img/testimonials/img-5.png" alt="testimonials-5" class="testimonials-img-5">
                         <img src="assets/img/testimonials/img-6.png" alt="testimonials-6" class="testimonials-img-6">
                         <div class="inner-banner">
-                            <h4>Testimonials</h4>
+                            <h3 class="bix-h4">Testimonials</h3>
                         </div>
                         <div class="owl-carousel testimonials-slider">
                             <div class="bix-testimonials-inner">
@@ -554,7 +559,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="testimonials-contact">
-                                            <h4>Isabella Bianchi</h4>
+                                            <p class="bix-h4">Isabella Bianchi</p>
                                             <span>(Manager)</span>
                                             <div class="inner-contact">
                                                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -574,7 +579,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="testimonials-contact">
-                                            <h4>Saddika Alard</h4>
+                                            <p class="bix-h4">Saddika Alard</p>
                                             <span>(Team Leader)</span>
                                             <div class="inner-contact">
                                                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -594,7 +599,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="testimonials-contact">
-                                            <h4>Stephen Smith</h4>
+                                            <p class="bix-h4">Stephen Smith</p>
                                             <span>(Co Founder)</span>
                                             <div class="inner-contact">
                                                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -613,7 +618,9 @@
     </section> -->
 
     <!-- footer -->
-    <footer>
+        </main>
+
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -621,16 +628,16 @@
                         <p>&copy; <span id="copyright_year"></span> <a href="https://shamsudinaalam.com.np/">Shamsudin Aalam</a>, All Rights
                             Reserved.</p>
                         <div class="logo-links">
-                            <a href="https://www.facebook.com/share/sYHTUnefBS8a9vpS/" target="_blank">
+                            <a aria-label="Facebook profile" title="Shamsudin Aalam on Facebook" href="https://www.facebook.com/share/sYHTUnefBS8a9vpS/" target="_blank" rel="noopener noreferrer nofollow">
                                 <i class="ri-facebook-line"></i>
                             </a>
-                            <a href="https://www.instagram.com/samsuddeen_aalam1/profilecard/?igsh=MWVibGN5dW42MnA2bQ==" target="_blank">
+                            <a aria-label="Instagram profile" title="Shamsudin Aalam on Instagram" href="https://www.instagram.com/samsuddeen_aalam1/profilecard/?igsh=MWVibGN5dW42MnA2bQ==" target="_blank" rel="noopener noreferrer nofollow">
                                 <i class="ri-instagram-line"></i>
                             </a>
-                            <a href="mailto:samsuddeenaalam7@gmail.com">  <!-- Replace with your email -->
+                            <a aria-label="Email Shamsudin Aalam" title="Send an email to Shamsudin Aalam" href="mailto:samsuddeenaalam7@gmail.com">  <!-- Replace with your email -->
                                 <i class="ri-mail-line"></i>  <!-- Email icon -->
                             </a>
-                            <a href="https://www.linkedin.com/in/shamsudin-aalam-b920a8213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                            <a aria-label="LinkedIn profile" title="Shamsudin Aalam on LinkedIn" href="https://www.linkedin.com/in/shamsudin-aalam-b920a8213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer nofollow">
                                 <i class="ri-linkedin-line"></i>
                             </a>
                         </div>
@@ -638,13 +645,22 @@
                 </div>
             </div>
         </div>
+                            <div class="footer-links">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="resume.html">Resume</a></li>
+                            </ul>
+                        </div>
     </footer>
-    <a href="https://wa.me/9779765685891" target="_blank" class="whatsapp-button">
+    <a aria-label="Chat on WhatsApp" title="Chat with Shamsudin Aalam on WhatsApp" href="https://wa.me/9779765685891" target="_blank" rel="noopener noreferrer nofollow" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Tab to top -->
-    <a href="#Top" class="back-to-top result-placeholder">
+    <a aria-label="Back to top" title="Scroll back to top of page" href="#Top" class="back-to-top result-placeholder">
         <i class="ri-arrow-up-line"></i>
         <div class="back-to-top-wrap active-progress">
             <svg viewBox="-1 -1 102 102">
@@ -656,16 +672,16 @@
   <!-- Feature Tools -->
 <div class="bix-tools-sidebar-overlay"></div>
 <div class="bix-tools-sidebar">
-    <a href="javascript:void(0)" class="bix-tools-sidebar-toggle in-out">
+    <a aria-label="Open customization tools" title="Open site color and display options" href="javascript:void(0)" class="bix-tools-sidebar-toggle in-out">
         <i class="ri-settings-3-line"></i>
     </a>
     <div class="bix-bar-title">
-        <h6>Tools</h6>
-        <a href="javascript:void(0)" class="close-tools"><i class="ri-close-line"></i></a>
+        <p class="bix-h6">Tools</p>
+        <a aria-label="Close customization tools" title="Close site color and display options" href="javascript:void(0)" class="close-tools"><i class="ri-close-line"></i></a>
     </div>
     <div class="bix-tools-detail">
         <div class="bix-tools-block">
-            <h3>Select Color</h3>
+            <p class="bix-h3">Select Color</p>
             <ul class="bix-color">
                 <li class="color-primary active-variant" data-color="primary"></li>
                 <li class="color-1" data-color="color-1"></li>
@@ -674,7 +690,7 @@
             </ul>
         </div>
         <!-- <div class="bix-tools-block">
-            <h3>Modes</h3>
+            <p class="bix-h3">Modes</p>
             <div class="bix-tools-rtl">
                 <div class="mode-primary bix-tools-item mode active-mode ltr" data-bix-mode-tool="ltr">
                     <img src="assets/img/tools/ltr.png" alt="ltr">
@@ -687,7 +703,7 @@
             </div>
         </div> -->
         <div class="bix-tools-block">
-            <h3>Dark Modes</h3>
+            <p class="bix-h3">Dark Modes</p>
             <div class="bix-tools-dark">
                 <div class="mode-primary bix-tools-item mode active-dark-mode light" data-bix-mode-tool="light">
                     <img src="assets/img/tools/light.png" alt="light">
