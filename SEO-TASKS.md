@@ -125,14 +125,14 @@ PROJECTS
    - Implemented role-based access control, leave management, and efficient HR operations tracking.
 
 SKILLS
-- Backend: PHP, Laravel, RESTful APIs, SOAP API integration, Python and Django (currently learning)
+- Backend: PHP, Laravel, RESTful APIs, SOAP API integration, Python, Django
 - Database: MySQL, PostgreSQL
 - Deployment & DevOps: Docker, GitLab CI/CD, Ubuntu Linux, DigitalOcean, Nginx, Apache, cPanel, CloudPanel, SSH
 - API & Integrations: Amadeus, DHL, FedEx, Plazmatech SOAP, eSewa, Khalti, ConnectIPS, HBL, Fonepay, Stripe, PayPal
 - Frontend Collaboration: Vue.js, Bootstrap, jQuery, AJAX
 - Developer Tools: Git, GitHub, GitLab, Postman, Composer, VS Code, TablePlus, FileZilla, XAMPP
 - Other: SEO Optimization, Google Search Console, FFmpeg, Zoho Mail, Slack
-Progress bars/percentages: keep existing values for skills that already exist. For new skills reuse a similar existing value, EXCEPT Python and Django: use a LOW value (about 30%) and label them "(Learning)". List every new skill and its percentage in the report so I can review.
+Progress bars/percentages: Python and Django must NEVER get their own card, progress bar or percentage anywhere. Add them only as plain text inside the existing Backend skill: on index.html the card title becomes 'Backend (Laravel, PHP, Python, Django)', and on about.html and resume.html add 'Python, Django' to the Backend skills text or list. For other new skills, reuse a similar existing value and list them for me. Never create new skill cards or new boxes.
 
 CERTIFICATIONS
 - Laravel Advanced: Building Real-World Applications - Udemy
@@ -144,7 +144,7 @@ EXTRACURRICULAR
 - Participated in tech competitions and collaborated with peers to solve programming challenges.
 
 ### R1: index.html
-Update hero bio/short summary (mention Laravel & PHP), counters (3+ years, 10+ web applications), skills section (with Python/Django as learning), featured projects, short experience/education if shown.
+Update hero bio/short summary (mention Laravel & PHP), counters (3+ years, 10+ web applications), skills section (Backend card includes Python, Django), featured projects, short experience/education if shown.
 Required strings to verify: "3+", "10+", "Software Developer", "Laravel", "Django", the 6 project titles if projects are shown.
 
 ### R2: about.html
@@ -152,7 +152,7 @@ Full SUMMARY, ABOUT-ONLY EXTRA LINE, experience timeline (4 jobs with dates and 
 Required strings: "Trilokya Technology", "Nectar Digit", "Des Vu Technologies", "Prosoft Nepal", "June 2026", "June 2024", "November 2023", "June 2023", "LBEF Campus", "Birgunj Institute of Technology", "3.5/4.0", "Udemy", "Maximilian", "learning Python and Django".
 
 ### R3: resume.html (this page was NOT updated before; do it carefully)
-Experience (4 jobs, all bullets), education (2), skills (all 7 categories incl. Python/Django learning), certifications (3), extracurricular if the page has a place for it (otherwise skip and tell me). Remove outdated entries that conflict and list them in the report. The resume download button must point to `assets/shamsudin-resume.pdf` (same filename that exists now; do not touch the file).
+Experience (4 jobs, all bullets), education (2), skills (all 7 categories; Python, Django listed under Backend), certifications (3), extracurricular if the page has a place for it (otherwise skip and tell me). Remove outdated entries that conflict and list them in the report. The resume download button must point to `assets/shamsudin-resume.pdf` (same filename that exists now; do not touch the file).
 Required strings: all required strings from R2, plus "Shangrila Bank", "Docker", "GitLab CI/CD", "PostgreSQL", "Amadeus", "eSewa", "Khalti", "ConnectIPS", "Fonepay", "Stripe", "PayPal", "CloudPanel", "TablePlus", "Google Search Console", "FFmpeg", "Zoho Mail", "Slack", "Python", "Django".
 
 ### R4: projects.html
