@@ -37,7 +37,7 @@
 - [x] STEP R3: resume.html resume content
 - [x] STEP R4: projects.html resume content
 - [x] STEP R5: services.html resume content
-- [ ] STEP R6: footer/contact + role wording + SEO text consistency on all pages
+- [x] STEP R6: footer/contact + role wording + SEO text consistency on all pages
 - [ ] STEP D: images
 - [ ] STEP E: JS/CSS performance, static content
 - [ ] STEP F: headers, Cloudflare notes, final verification
