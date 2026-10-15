@@ -34,7 +34,7 @@
 - [x] STEP C: JSON-LD, Open Graph, robots.txt, sitemap.xml, llms.txt, manifest, contact block
 - [x] STEP R1: index.html resume content
 - [x] STEP R2: about.html resume content
-- [ ] STEP R3: resume.html resume content
+- [x] STEP R3: resume.html resume content
 - [ ] STEP R4: projects.html resume content
 - [ ] STEP R5: services.html resume content
 - [ ] STEP R6: footer/contact + role wording + SEO text consistency on all pages
